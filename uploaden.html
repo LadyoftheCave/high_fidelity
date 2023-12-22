@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl" >
+<head>
+  <meta charset="UTF-8">
+  <title>Idee&euml;nbus uploaden</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+  <header>
+    <nav class="menu">
+      <img src="images/logo.png" alt="Ideeenbus Logo" class="logo">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+           <a href="uploaden.html" class="nav-link">Uploaden</a>
+        </li>
+        <li class="nav-item">
+           <a href="idee_overzicht.html" class="nav-link">Idee&euml;n</a>
+        </li>
+        <li class="nav-item">
+           <a href="over_ideeenbus.html" class="nav-link">Over Idee&euml;nbus</a>
+          </li>
+      </ul>
+      <button class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+
+    <!-- Hero-section -->
+  <section class="hero-section">
+    <h1></h1>
+    <p></p>
+    <!-- <button class="hero-button">Ontdek meer</button> -->
+  </section>
+
+    <picture>
+        <source
+          media="(max-width: 320px)"
+          srcset="images/header_image_medium.jpg"
+        />
+        <source
+          media="(min-width: 321px) and (max-width: 1200px)"
+          srcset="images/header_image_medium_sv.jpg"
+        />
+        <img
+          src="images/header_image_medium.jpg"
+          alt="Header Banner"
+          class="header-image"
+        />
+
+
+    
+
+      </picture>
+  </header>
+
+
+
+
+
+  <main>
+    
+
+ 
+
+    <section class="uploaden_section">
+      <div class="white_container container--narrow "> 
+        <div class="introtext">        <h2>Bla die bla</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p></div>
+
+        <form action="/submit" method="post">
+
+            <!-- Tekstveld -->
+            <label for="tekstveld">OnderWerp:</label>
+            <input type="text" id="tekstveld" name="tekstveld" required>
+        
+            <br>
+        
+            <!-- Tekstarea -->
+            <label for="tekstarea">Jouw idee of suggestie:</label>
+            <textarea id="tekstarea" name="tekstarea" rows="12" cols="50" required></textarea>
+        
+            <br>
+        
+            <!-- Selectie -->
+            <label for="selectie">Jouw afdeling (optioneel):</label>
+            <select id="selectie" name="selectie" required>
+              <option value="optie1">Webdevelopment</option>
+              <option value="optie2">Marketing</option>
+              <option value="optie3">Webdesign</option>
+              <option value="optie1">Administratie</option>
+              <option value="optie2">Management</option>
+              <option value="optie3">HRM</option>
+            </select>
+        
+            <br>
+
+            <!-- Bestandsupload -->
+      <label for="bestand">Bestand uploaden:</label>
+      <input type="file" id="bestand" name="bestand">
+
+      <br><br>
+        
+            <!-- Verzendknop -->
+            <div class="submit_button">
+            <input type="submit" value="Verzenden">
+        </div>
+          </form>
+        
+</div>
+</section>
+
+  </main>
+  <footer class="section_footer container--grey">
+    <div class="grey_container container--narrow ">
+      <div class="widget widget_one">
+        <h3>WebKnight B.V. Idee&euml;nbus</h3>
+        <p>Deze website is een onderdeel<br>
+          van WebKnight B.V. en dient<br>
+          als platform voor het verzamelen<br>
+          en delen van
+          idee&euml;n<br></p><br>
+        <img src="images/social.png" alt="Facebook logo">
+        <img src="images/social.png" alt="Twitter logo">
+        <img src="images/social.png" alt="Instagram logo">
+      </div>
+      <div class="widget widget_two">
+        <h3>Adres</h3>
+          <p>Ideeplezier</p>
+          <p>Ideeenbusplein 12</p>
+          <p>7645ZH Halmelo</p>
+          <p>www.ideeplezier.nl</p>
+          <p>053-43256678</p>
+      </div>
+
+      <div class="widget widget_three">
+        <h3>Links</h3>
+          <p>Lorem</p>
+          <p>Loremipsum</p>
+          <p>Loremips</p>
+          <p>Loremippi</p>
+          <p>Loremippidip</p>
+          <p>Loremips</p>
+  
+      </div>
+      <div class="widget widget_fout">
+        <h3>Links</h3>
+        <p>Lorem</p>
+        <p>Loremipsum</p>
+        <p>Loremips</p>
+        <p>Loremippi</p>
+        <p>Loremippidip</p>
+        <p>Loremips</p>
+
+    </div>
+  </div>
+  </footer>
+  
+  <script  src="js/script.js"></script>
+
+</body>
+</html>
