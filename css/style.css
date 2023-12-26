@@ -108,8 +108,8 @@ header nav.menu {
 }
 
 header nav.menu .logo {
-  inline-size: 150px;
-  block-size: 37px;
+  inline-size: 130px;
+  block-size: 32px;
   margin-inline-start: 1rem;
   padding: 0.5rem;
   box-sizing: unset;
