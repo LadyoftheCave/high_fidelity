@@ -544,6 +544,7 @@ main section.section_three.section_three_idea .img_middle img {
 
 footer .widget img {
   inline-size: 40px;
+  margin-top: 0.3rem;
 }
 
 footer .widget ul li {
