@@ -546,6 +546,18 @@ footer .widget img {
   inline-size: 40px;
 }
 
+footer .widget ul li {
+  list-style-type: none;
+}
+
+footer .widget ul li a {
+  color: black;
+  text-decoration: none;
+}
+footer .widget ul li a:hover {
+  color: white;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
