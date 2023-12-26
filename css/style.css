@@ -542,6 +542,10 @@ main section.section_three.section_three_idea .img_middle img {
   margin: 0;
 }
 
+footer .widget img {
+  inline-size: 40px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
