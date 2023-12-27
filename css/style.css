@@ -326,7 +326,7 @@ select {
   block-size: 2.5rem;
 }
 
-select.selectie {
+select#selectie {
   background-color: var(--kleur-oranje);
 }
 
