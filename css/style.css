@@ -302,7 +302,7 @@ form {
   background-color: #fff;
   padding: 1.25rem;
   border-radius: 0.3rem;
-  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1); */
 }
 
 label {
@@ -596,6 +596,10 @@ footer .widget ul li a:hover {
     margin: 0 auto;
     text-align: center;
     inline-size: 100%;
+  }
+
+  header section.hero-section.uploaden {
+    top: 10rem;
   }
   */ header section.hero-section p {
     margin-bottom: 1.5rem;
