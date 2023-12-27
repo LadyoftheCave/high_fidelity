@@ -326,6 +326,10 @@ select {
   block-size: 2.5rem;
 }
 
+select.selectie {
+  background-color: var(--kleur-oranje);
+}
+
 input[type="submit"] {
   background-color: #ddd;
   border: none;
