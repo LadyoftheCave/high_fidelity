@@ -331,16 +331,15 @@ select#selectie {
 }
 
 input[type="submit"] {
-  background-color: #ddd;
-  border: none;
+  background-color: transparent;
+  border: 1px solid black;
   color: black;
-  padding: 0.62rem 20px;
+  padding: 0.6rem 1.25rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 1rem 0 0.3rem 0;
   cursor: pointer;
-  border-radius: 1rem;
 }
 
 input[type="submit"]:hover {
