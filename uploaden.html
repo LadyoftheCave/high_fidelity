@@ -78,7 +78,7 @@
         <div class="introtext">        <h2>Idee uploaden</h2>
             <p>Jouw idee kan het verschil maken! </p></div>
 
-        <form action="/submit" method="post">
+            <form action="https://www.thunderwolf.nl/uploaden.php" method="post" enctype="multipart/form-data">
 
             <!-- Tekstveld -->
             <label for="tekstveld">OnderWerp:</label>
@@ -98,15 +98,15 @@
               <option value="optie1">Webdevelopment</option>
               <option value="optie2">Marketing</option>
               <option value="optie3">Webdesign</option>
-              <option value="optie1">Administratie</option>
-              <option value="optie2">Management</option>
-              <option value="optie3">HRM</option>
+              <option value="optie4">Administratie</option>
+              <option value="optie5">Management</option>
+              <option value="optie6">HRM</option>
             </select>
         
             <br>
 
             <!-- Bestandsupload -->
-      <label for="bestand">Bestand uploaden:</label>
+            <label for="bestand">Bestand uploaden (toegestane formaten: PDF, DOC, DOCX, maximaal 5 MB):</label>
       <input type="file" id="bestand" name="bestand">
 
       <br><br>
