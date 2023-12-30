@@ -7,29 +7,62 @@
     <title>Idee overzicht</title>
 </head>
 <body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Idee overzicht</title>
+    <style>
+        /* Stijl voor de resultaten-container */
+        #resultaten {
+            display: flex;
+            flex-direction: column;  /* Zorg ervoor dat de items onder elkaar worden weergegeven */
+            gap: 10px;  /* Voeg wat ruimte tussen de items toe */
+        }
+    
+        /* Stijl voor de dynamische link */
+        #resultaten a {
+            text-decoration: none;  /* Verwijder de standaard onderstreping van de link */
+            color: #007BFF;  /* Geef de link een blauwe kleur (je kunt dit aanpassen naar jouw voorkeur) */
+            font-weight: bold;
+            margin-bottom: 5px;  /* Voeg wat ruimte onder de link toe */
+        }
+    
+        /* Stijl voor de details-container */
+        #resultaten div {
+            background-color: #f8f9fa;  /* Voeg een lichte achtergrondkleur toe aan elk item */
+            padding: 10px;  /* Voeg wat opvulling toe aan elk item */
+            border-radius: 5px;  /* Geef elk item afgeronde hoeken */
+            margin-bottom: 10px;  /* Voeg wat ruimte onder elk item toe */
+        }
+    </style>
+    
+</head>
+<body>
     <header>
-        <nav class="menu">
-            <img src="images/7067281.png" alt="Ideeenbus Logo" class="logo">
-            <ul class="nav-menu">
-              <li class="nav-item">
-                 <a href="index.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                 <a href="uploaden.html" class="nav-link">Uploaden</a>
-              </li>
-              <li class="nav-item">
-                 <a href="idee_overzicht.html" class="nav-link">Idee&euml;n</a>
-              </li>
-              <li class="nav-item">
-                 <a href="over_ideeenbus.html" class="nav-link">Over Idee&euml;nbus</a>
-                </li>
-            </ul>
-            <button class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-          </nav>
+      <nav class="menu">
+        <img src="images/7067281.png" alt="Ideeenbus Logo" class="logo">
+        <ul class="nav-menu">
+          <li class="nav-item">
+             <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+             <a href="uploaden.html" class="nav-link">Uploaden</a>
+          </li>
+          <li class="nav-item">
+             <a href="idee_overzicht.html" class="nav-link">Idee&euml;n</a>
+          </li>
+          <li class="nav-item">
+             <a href="over_ideeenbus.html" class="nav-link">Over Idee&euml;nbus</a>
+            </li>
+        </ul>
+        <button class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
 
 
             <!-- Hero-section -->
@@ -49,7 +82,7 @@
           srcset="images/header_image_medium_sv.jpg"
         />
         <img
-          src="images/interior_header_two.jpg"
+          src="images/interior_header_three.jpg"
           alt="Header Banner"
           class="header-image"
         />
@@ -59,144 +92,26 @@
 
       </picture>
   </header>
-  <main>
-<section class="container-center">
-    <div class="kopjes container--narrow">
-        <h2>Bla die bla</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
-</section>
 
 
+
+    <main>
+        <section class="container-center">
+            <div class="kopjes container--narrow">
+                <h2>Bla die bla</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
 
         <section class="container-center">
             <div class="container--narrow">
-                <div class="idee_overzicht">
-
-        
-
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </article>
-<article class="idee_box">
-                        <div class="idee_box__top">
-                            <div class="idee_box__day">Maandag</div>
-                            <div class="idee_box__date">11-11-1911</div>
-                        </div>
-                        <div class="idee_box__image">
-                            <img src="images/afbeelding_vierkant.jpg" alt="idee">
-                        </div>
-                        <div class="idee_box__tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a venenatis nulla. In vehicula blandit sapien, at gravida justo ullamcorper blandit.</div>
-                        <div class="idee_box__bottom">
-                            <div class="idee_box__btn">Details</div>
-                        </div>
-                    </div>
+                <div class="idee_overzicht" id="resultaten">
+                    <!-- Resultaten worden hier dynamisch ingevoegd -->
                 </div>
-            </article>
+            </div>
         </section>
-
     </main>
+
 
     <footer class="section_footer container--grey">
         <div class="grey_container container--narrow ">
@@ -249,7 +164,46 @@
         </div>
       </div>
       </footer>
-          <script  src="js/script.js"></script>
 
+      <script>
+        // Ophalen opgeslagen formulieren uit localStorage
+        const storedForms = JSON.parse(localStorage.getItem('forms'));
+    
+        // Zoek de container waarin de resultaten moeten worden toegevoegd
+        const resultatenContainer = document.getElementById('resultaten');
+    
+        // Controleren of er gegevens zijn opgeslagen
+        if (storedForms && storedForms.length > 0) {
+            // Itereren over alle formulieren
+            storedForms.forEach((formData, index) => {
+                // Voeg een dynamische link toe aan de gegenereerde gegevens
+                const link = document.createElement('a');
+                link.href = `idee.html?index=${index}`; // Voeg een query parameter toe met de index
+                link.innerHTML = `<strong>Formulier ${index + 1}</strong>`; // Maak de tekst klikbaar
+                link.style.display = 'block'; // Plaats het op een nieuwe regel
+    
+                // Voeg het formulier toe aan de container binnen de main-sectie
+                resultatenContainer.appendChild(link);
+    
+                // Voeg de gegevens toe aan de container
+                const detailsContainer = document.createElement('div');
+                detailsContainer.innerHTML = `<p>Onderwerp: ${formData.onderwerp}</p>
+                                              <p>Idee: ${formData.idee}</p>
+                                              <p>Afdeling: ${formData.afdeling}</p>`;
+    
+                // Voeg het veld voor het bestand toe als het aanwezig is
+                if (formData.bestand) {
+                    detailsContainer.innerHTML += `<p>Bestand: ${formData.bestand}</p>`;
+                }
+    
+                // Voeg de details-container toe aan de resultaten-container
+                resultatenContainer.appendChild(detailsContainer);
+            });
+        } else {
+            // Toon een bericht als er geen opgeslagen gegevens zijn gevonden
+            resultatenContainer.innerHTML = '<p>Geen opgeslagen gegevens gevonden.</p>';
+        }
+    </script>
+    
 </body>
 </html>

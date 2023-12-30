@@ -78,7 +78,7 @@
         <div class="introtext">        <h2>Idee uploaden</h2>
             <p>Jouw idee kan het verschil maken! </p></div>
 
-            <form action="" method="post" enctype="multipart/form-data">
+            <form id="myForm">
 
             <!-- Tekstveld -->
             <label for="tekstveld">OnderWerp:</label>
@@ -113,7 +113,7 @@
         
             <!-- Verzendknop -->
             <div class="submit_button">
-            <input type="submit" value="Verzenden">
+              <button type="button" onclick="saveFormData()">Opslaan</button>
         </div>
           </form>
         
@@ -172,7 +172,28 @@
     </div>
   </div>
   </footer>
-  
+  <script>
+    function saveFormData() {
+        // Verkrijg formuliergegevens
+        const formData = {
+            onderwerp: document.getElementById('tekstveld').value,
+            idee: document.getElementById('tekstarea').value,
+            afdeling: document.getElementById('selectie').value
+        };
+
+        // Ophalen opgeslagen formulieren
+        const storedForms = JSON.parse(localStorage.getItem('forms')) || [];
+
+        // Toevoegen van nieuwe formuliergegevens
+        storedForms.push(formData);
+
+        // Opnieuw opslaan van alle formulieren
+        localStorage.setItem('forms', JSON.stringify(storedForms));
+
+        // Doorsturen naar andere pagina
+        window.location.href = 'idee_overzicht.html';
+    }
+</script>
   <script  src="js/script.js"></script>
 
 </body>
