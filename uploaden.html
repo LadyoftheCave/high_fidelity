@@ -95,12 +95,12 @@
             <!-- Selectie -->
             <label for="selectie">Jouw afdeling (optioneel):</label>
             <select id="selectie" name="selectie" required>
-              <option value="optie1">Webdevelopment</option>
-              <option value="optie2">Marketing</option>
-              <option value="optie3">Webdesign</option>
-              <option value="optie4">Administratie</option>
-              <option value="optie5">Management</option>
-              <option value="optie6">HRM</option>
+              <option value="webdevelopment">Webdevelopment</option>
+              <option value="marketing">Marketing</option>
+              <option value="webdesign">Webdesign</option>
+              <option value="administratie">Administratie</option>
+              <option value="management">Management</option>
+              <option value="hrm">HRM</option>
             </select>
         
             <br>
@@ -113,7 +113,7 @@
         
             <!-- Verzendknop -->
             <div class="submit_button">
-              <button type="button" onclick="saveFormData()">Opslaan</button>
+              <button type="button" onclick="saveIdeaForm()">Opslaan</button>
         </div>
           </form>
         
@@ -173,28 +173,10 @@
   </div>
   </footer>
   <script>
-    function saveFormData() {
-        // Verkrijg formuliergegevens
-        const formData = {
-            onderwerp: document.getElementById('tekstveld').value,
-            idee: document.getElementById('tekstarea').value,
-            afdeling: document.getElementById('selectie').value
-        };
-
-        // Ophalen opgeslagen formulieren
-        const storedForms = JSON.parse(localStorage.getItem('forms')) || [];
-
-        // Toevoegen van nieuwe formuliergegevens
-        storedForms.push(formData);
-
-        // Opnieuw opslaan van alle formulieren
-        localStorage.setItem('forms', JSON.stringify(storedForms));
-
-        // Doorsturen naar andere pagina
-        window.location.href = 'idee_overzicht.html';
-    }
+ 
 </script>
-  <script  src="js/script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/controller.js"></script>
 
 </body>
 </html>
