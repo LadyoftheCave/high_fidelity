@@ -623,6 +623,11 @@ footer .widget ul li a:hover {
     margin-block-end: 3rem;
   }
 
+  .idea_container.container--narrow {
+    width: 63rem;
+    text-align: center;
+  }
+
   header .usps {
     display: flex;
     flex-direction: row;
