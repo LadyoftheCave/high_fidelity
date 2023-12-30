@@ -64,19 +64,13 @@
 
   <main>
     <section class="container-center">
-        <div class="kopjes container--narrow">
-            <h2>Bla die bla</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </section>
+      <div class="container--narrow">
+          <div class="idee_overzicht" id="resultaten">
+              <!-- Resultaten worden hier dynamisch ingevoegd -->
+          </div>
+      </div>
+  </section>
 
-    <section class="container-center">
-        <div class="container--narrow">
-            <div class="idee_overzicht" id="resultaten">
-                <!-- Resultaten worden hier dynamisch ingevoegd -->
-            </div>
-        </div>
-    </section>
 </main>
 
 
@@ -133,26 +127,47 @@
   </footer>
 
   <script>
-    // Haal de waarde van de 'index' query parameter op
-    const urlParams = new URLSearchParams(window.location.search);
-    const index = urlParams.get('index');
+    document.addEventListener('DOMContentLoaded', function () {
+        // Haal de waarde van de 'index' query parameter op
+        const urlParams = new URLSearchParams(window.location.search);
+        const index = urlParams.get('index');
 
-    // Ophalen opgeslagen formulieren uit localStorage
-    const storedForms = JSON.parse(localStorage.getItem('forms'));
+        // Ophalen opgeslagen formulieren uit localStorage
+        const storedForms = JSON.parse(localStorage.getItem('forms')) || [];
 
-    // Controleren of er gegevens zijn opgeslagen en of de index bestaat
-    if (storedForms && storedForms.length > 0 && index !== null) {
-        // Haal de specifieke gegevens op voor het formulier met de opgegeven index
-        const formData = storedForms[index];
+        // Controleren of er gegevens zijn opgeslagen en of de index bestaat
+        if (storedForms && storedForms.length > 0 && index !== null) {
+            // Haal de specifieke gegevens op voor het formulier met de opgegeven index
+            const formData = storedForms[index];
 
-        // Weergave van de gegevens in de main
-        const resultatenDiv = document.getElementById('resultaten');
-        resultatenDiv.innerHTML = `
-            <p><strong>Formulier ${parseInt(index) + 1}</strong></p>
-            <p>Onderwerp: ${formData.onderwerp}</p>
-            <p>Idee: ${formData.idee}</p>
-        `;
-    }
+            // Selecteer de container voor resultaten
+            const resultatenDiv = document.getElementById('resultaten');
+
+            const width = 800;  // Pas de breedte aan naar het gewenste formaat
+        const height = 400; // Pas de hoogte aan naar het gewenste formaat
+
+        fetch(`https://picsum.photos/${width}/${height}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.url;
+                })
+                .then(imageUrl => {
+                    // Voeg het specifieke idee toe aan de container
+                    resultatenDiv.innerHTML = `
+                        <div class="resultaat">
+                            <p><strong>Formulier ${parseInt(index) + 1}</strong></p>
+                            <p>Onderwerp: ${formData.onderwerp}</p>
+                            <img src="${imageUrl}" alt="Random Image">
+                            <p>Idee: ${formData.idee}</p>
+
+                        </div>
+                    `;
+                })
+                .catch(error => console.error('Fetch error:', error));
+        }
+    });
 </script>
 </body>
 </html>
