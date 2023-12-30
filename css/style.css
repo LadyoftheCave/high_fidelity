@@ -784,3 +784,41 @@ footer .widget ul li a:hover {
 }
 
 /* EINDE MEDIA QUERIES */
+
+/* Stijl voor de resultaten-container */
+#resultaten {
+  display: flex;
+  flex-direction: column; /* Zorg ervoor dat de items onder elkaar worden weergegeven */
+  gap: 10px;
+  inline-size: 63rem; /* Voeg wat ruimte tussen de items toe */
+}
+
+/* Stijl voor de dynamische link */
+#resultaten a {
+  text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+  color: #00060c; /* Geef de link een blauwe kleur (je kunt dit aanpassen naar jouw voorkeur) */
+  font-weight: bold;
+  margin-block-end: 0.3rem; /* Voeg wat ruimte onder de link toe */
+}
+
+#resultaten a:hover {
+  color: var(--kleur-oranje);
+}
+
+/* Stijl voor de details-container */
+#resultaten.idee_overzicht div {
+  background-color: var(
+    --kleur-oranje
+  ); /* Voeg een lichte achtergrondkleur toe aan elk item */
+  padding: 0.62rem; /* Voeg wat opvulling toe aan elk item */
+  border-radius: 0.3rem; /* Geef elk item afgeronde hoeken */
+  margin-block-end: 2rem; /* Voeg wat ruimte onder elk item toe */
+}
+
+#resultaten.idee_overzicht .resultaat {
+  background-color: transparent;
+}
+
+#resultaten.idee_overzicht div p {
+  text-align: left;
+}

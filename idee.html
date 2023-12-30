@@ -33,11 +33,12 @@
 
 
             <!-- Hero-section -->
-  <section class="hero-section">
-    <h1></h1>
-    <p></p>
-    <!-- <button class="hero-button">Ontdek meer</button> -->
-  </section>
+    <!-- Hero-section -->
+    <section class="hero-section uploaden">
+      <h1>Uploaden</h1>
+      <p>Deel je idee met ons en help ons groeien en innoveren</p>
+      <!-- <button class="hero-button">Ontdek meer</button> -->
+    </section>
 
     <picture>
         <source
@@ -126,49 +127,8 @@
   </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Haal de waarde van de 'index' query parameter op
-        const urlParams = new URLSearchParams(window.location.search);
-        const index = urlParams.get('index');
+  <script src="js/controller.js"></script>
 
-        // Ophalen opgeslagen formulieren uit localStorage
-        const storedForms = JSON.parse(localStorage.getItem('forms')) || [];
-
-        // Controleren of er gegevens zijn opgeslagen en of de index bestaat
-        if (storedForms && storedForms.length > 0 && index !== null) {
-            // Haal de specifieke gegevens op voor het formulier met de opgegeven index
-            const formData = storedForms[index];
-
-            // Selecteer de container voor resultaten
-            const resultatenDiv = document.getElementById('resultaten');
-
-            const width = 1008;  // Pas de breedte aan naar het gewenste formaat
-        const height = 400; // Pas de hoogte aan naar het gewenste formaat
-
-        fetch(`https://picsum.photos/${width}/${height}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.url;
-                })
-                .then(imageUrl => {
-                    // Voeg het specifieke idee toe aan de container
-                    resultatenDiv.innerHTML = `
-                        <div class="resultaat">
-                            <p><strong>Formulier ${parseInt(index) + 1}</strong></p>
-                            <p>Onderwerp: ${formData.onderwerp}</p>
-                            <img src="${imageUrl}" alt="Random Image">
-                            <p>Idee: ${formData.idee}</p>
-
-                        </div>
-                    `;
-                })
-                .catch(error => console.error('Fetch error:', error));
-        }
-    });
-</script>
 </body>
 </html>
 </body>

@@ -12,7 +12,7 @@ function getIdea() {
       // Voeg een dynamische link toe aan de gegenereerde gegevens
       const link = document.createElement("a");
       link.href = `idee.html?index=${index}`; // Voeg een query parameter toe met de index
-      link.innerHTML = `<strong>Formulier ${index + 1}</strong>`; // Maak de tekst klikbaar
+      link.innerHTML = `<strong>Idee ${index + 1}</strong>`; // Maak de tekst klikbaar
       link.style.display = "block"; // Plaats het op een nieuwe regel
 
       // Voeg het formulier toe aan de container binnen de main-sectie
