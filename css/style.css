@@ -209,7 +209,8 @@ header .usps .usp h3 {
 
 header .usps .usp button.usp_button,
 header section.hero-section button,
-main section.section_two .read .read_button {
+main section.section_two .read .read_button,
+main #myForm .submit_button button {
   background-color: transparent;
   border: 1px solid black;
   color: black;
@@ -220,6 +221,12 @@ main section.section_two .read .read_button {
   margin: 1rem 0 0.3rem 0;
   cursor: pointer;
   /* border-radius: 1rem; */
+}
+
+header .usps button.usp_button:hover,
+header section.hero-section button:hover,
+section.section_two .read .read_button:hover {
+  background: var(--kleur-oranje);
 }
 
 header section.hero-section {

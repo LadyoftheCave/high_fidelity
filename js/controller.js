@@ -48,16 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(imageUrl => {
         // Voeg het specifieke idee toe aan de container
         resultatenDiv.innerHTML = `
-                    <div class="resultaat">
-
-                        <h2>${formData.onderwerp}</h2><br>
-                        <img src="${imageUrl}" alt="Random Image">
-                        <p id="demo"></p>
-                        
-                        <p><br>${formData.idee}</p>
-
-                    </div>
-                `;
+                      <div class="resultaat">
+  
+                          <h2>${formData.onderwerp}</h2><br>
+                          <img src="${imageUrl}" alt="Random Image">
+                          <p id="demo"></p>
+                          
+                          <p><br>${formData.idee}</p>
+  
+                      </div>
+                  `;
       })
       .catch(error => console.error("Fetch error:", error));
   }
