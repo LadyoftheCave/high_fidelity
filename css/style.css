@@ -80,6 +80,11 @@ body {
   font-size: 16px;
 }
 
+p {
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
 .container--narrow {
   max-width: 63rem;
   margin-block-start: 1rem;
@@ -193,6 +198,7 @@ header .usps {
   /* bottom: 3rem; */
   left: 0;
   right: 0;
+  text-align: center;
 }
 
 header .usps .usp {
@@ -259,10 +265,11 @@ header section.hero-section {
   left: 0;
   margin: 0 auto;
   text-align: center;
-  inline-size: 15rem;
+  /* inline-size: 15rem; */
+  /* padding: 0 2rem 0 2rem; */
 }
 header section.hero-section h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -315,6 +322,7 @@ main section.section_three .white_container {
 
 main section.section_two .grey_container {
   padding: 2rem 1.5rem 2rem 1.5rem;
+  text-align: center;
 }
 
 footer .grey_container {
@@ -598,7 +606,26 @@ footer.section_footer {
   background-color: var(--kleur-oranje);
 }
 
+footer.section_footer p {
+  font-weight: 400;
+}
+
 /* MEDIA QUERIES */
+
+@media (min-width: 388px) {
+  header section.hero-section h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 600px) {
+  header .usps {
+    text-align: left;
+  }
+
+  main section.section_two .grey_container {
+    text-align: left;
+  }
+}
 
 @media (min-width: 768px) {
   header button.hamburger {
@@ -811,6 +838,13 @@ footer.section_footer {
   form {
     padding: 0;
   }
+
+  #resultaten {
+    display: flex;
+    flex-direction: column; /* Zorg ervoor dat de items onder elkaar worden weergegeven */
+    gap: 10px;
+    inline-size: 63rem; /* Voeg wat ruimte tussen de items toe */
+  }
 }
 
 /* EINDE MEDIA QUERIES */
@@ -820,7 +854,7 @@ footer.section_footer {
   display: flex;
   flex-direction: column; /* Zorg ervoor dat de items onder elkaar worden weergegeven */
   gap: 10px;
-  inline-size: 63rem; /* Voeg wat ruimte tussen de items toe */
+  /* inline-size: 63rem;  */
 }
 
 /* Stijl voor de dynamische link */
