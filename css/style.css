@@ -65,6 +65,7 @@
   --kleur-wit: white;
   --kleur-transparant: transparent;
   --kleur-oranje: #e9b34f;
+  --kleur-interior: #f4d17e;
 }
 
 /* ALGEMEEN */
@@ -254,7 +255,8 @@ header section.hero-section button:hover,
 section.section_two .read .read_button:hover,
 header .hero-section a:hover,
 header .usps .usp a.usp-button:hover,
-main .section_two .read .usp-button:hover {
+main .section_two .read .usp-button:hover,
+main #myForm .submit_button button:hover {
   background: var(--kleur-oranje);
 }
 
@@ -656,7 +658,7 @@ footer.section_footer p {
 
   header section.hero-section {
     position: absolute;
-    top: 13rem;
+    top: 11rem;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -665,7 +667,7 @@ footer.section_footer p {
   }
 
   header section.hero-section.uploaden {
-    top: 10rem;
+    top: 9rem;
   }
   */ header section.hero-section p {
     margin-bottom: 1.5rem;
@@ -673,6 +675,15 @@ footer.section_footer p {
 
   main .idee_box {
     flex-basis: calc(33.3333% - 4rem);
+  }
+
+  header section.hero-section h1 {
+    font-size: 5rem;
+  }
+  header section.hero-section h1.interior {
+    color: var(--kleur-interior);
+    text-shadow: 1px 1px 3px #fff;
+    opacity: 0.8;
   }
 }
 
@@ -689,31 +700,6 @@ footer.section_footer p {
   .idea_container.container--narrow {
     width: 63rem;
     text-align: center;
-  }
-
-  header .usps {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-    position: absolute;
-    bottom: 3rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    inline-size: 100%;
-  }
-
-  header .usps .usp {
-    inline-size: 18rem;
-    block-size: auto;
-    background-color: white;
-    box-shadow: 0.5rem 0.5rem 1rem #0000001c;
-    padding: 1.5rem;
-  }
-
-  header .usps .usp h3 {
-    margin-block-end: 1rem;
   }
 
   /* main {
@@ -847,6 +833,32 @@ footer.section_footer p {
   }
 }
 
+@media (min-width: 1016px) {
+  header .usps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    inline-size: 100%;
+  }
+
+  header .usps .usp {
+    inline-size: 18rem;
+    block-size: auto;
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem 1rem #0000001c;
+    padding: 1.5rem;
+  }
+
+  header .usps .usp h3 {
+    margin-block-end: 1rem;
+  }
+}
 /* EINDE MEDIA QUERIES */
 
 /* Stijl voor de resultaten-container */
