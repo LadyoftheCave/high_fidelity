@@ -208,6 +208,7 @@ header .usps .usp h3 {
 }
 
 header .usps .usp button.usp_button,
+header .usps .usp .usp_button,
 header section.hero-section button,
 main section.section_two .read .read_button,
 main #myForm .submit_button button,
@@ -224,10 +225,30 @@ header .hero-section a {
   /* border-radius: 1rem; */
 }
 
+header .hero-section a {
+  font-size: 0.8rem;
+}
+
+header .usps .usp a.usp-button,
+main .section_two .read .usp-button {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  padding: 0.6rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0 0.3rem 0;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
 header .usps button.usp_button:hover,
 header section.hero-section button:hover,
 section.section_two .read .read_button:hover,
-header .hero-section a:hover {
+header .hero-section a:hover,
+header .usps .usp a.usp-button:hover,
+main .section_two .read .usp-button:hover {
   background: var(--kleur-oranje);
 }
 
@@ -571,6 +592,12 @@ footer .widget ul li a:hover {
   color: white;
 }
 
+footer.section_footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--kleur-oranje);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
@@ -744,12 +771,6 @@ footer .widget ul li a:hover {
 
   main section.section_three {
     margin-bottom: 0;
-  }
-
-  footer.section_footer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--kleur-oranje);
   }
 
   footer .grey_container.container--narrow {
