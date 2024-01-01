@@ -20,9 +20,9 @@ function getIdea() {
 
       // Voeg de gegevens toe aan de container
       const detailsContainer = document.createElement("div");
-      detailsContainer.innerHTML = `<p>Onderwerp: ${formData.onderwerp}</p>
-                                              <p>Idee: ${formData.idee}</p>
-                                              <p>Afdeling: ${formData.afdeling}</p>`;
+      detailsContainer.innerHTML = `<p><strong>Onderwerp:</strong> ${formData.onderwerp}</p>
+                                              <p><strong>Idee:</strong> ${formData.idee}</p>
+                                              <p><strong>Afdeling:</strong> ${formData.afdeling}</p>`;
 
       // Voeg het veld voor het bestand toe als het aanwezig is
       if (formData.bestand) {
