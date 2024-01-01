@@ -70,7 +70,6 @@
 }
 
 /* ALGEMEEN */
-
 * {
   padding: 0;
   margin: 0;
@@ -96,11 +95,9 @@ p {
 .container--grey {
   background-color: var(--kleur-container);
 }
-
 /* EINDE ALGEMEEN */
 
 /* HEADER */
-
 header {
   position: relative;
 }
@@ -240,6 +237,7 @@ header .hero-section a {
 }
 
 header .usps .usp a.usp-button,
+main .idea_container a.usp-button,
 main .section_two .read .usp-button {
   background-color: transparent;
   border: 1px solid black;
@@ -259,7 +257,8 @@ section.section_two .read .read_button:hover,
 header .hero-section a:hover,
 header .usps .usp a.usp-button:hover,
 main .section_two .read .usp-button:hover,
-main #myForm .submit_button button:hover {
+main #myForm .submit_button button:hover,
+main .idea_container a.usp-button:hover {
   background: var(--kleur-oranje);
 }
 
