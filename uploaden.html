@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Idee&euml;nbus uploaden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -11,7 +12,7 @@
 <body>
   <header>
     <nav class="menu">
-      <img src="images/7067281.png" alt="Ideeenbus Logo" class="logo">
+      <a href="index.html" aria-label="ideabox logo"><img src="images/7067281.png" alt="Ideeenbus Logo" class="logo"></a>
       <ul class="nav-menu">
         <li class="nav-item">
            <a href="index.html" class="nav-link">Home</a>
@@ -38,19 +39,19 @@
 
     <!-- Hero-section -->
     <section class="hero-section uploaden">
-      <h1>Uploaden</h1>
-      <p>Deel je idee met ons en help ons groeien en innoveren</p>
-      <!-- <button class="hero-button">Ontdek meer</button> -->
+      <h1 class="interior">Uploaden</h1>
+      <!-- <p>Deel je idee met ons en help ons groeien en innoveren</p>
+      <button class="hero-button">Ontdek meer</button> -->
     </section>
 
     <picture>
         <source
           media="(max-width: 320px)"
-          srcset="images/interior_header.jpg"
+          srcset="images/header_image_medium_sv_upload.jpg"
         />
         <source
           media="(min-width: 321px) and (max-width: 1200px)"
-          srcset="images/header_image_medium_sv.jpg"
+          srcset="images/header_image_medium_sv_upload.jpg"
         />
         <img
           src="images/interior_header.jpg"
@@ -78,7 +79,7 @@
         <div class="introtext">        <h2>Idee uploaden</h2>
             <p>Jouw idee kan het verschil maken! </p></div>
 
-            <form action="" method="post" enctype="multipart/form-data">
+            <form id="myForm">
 
             <!-- Tekstveld -->
             <label for="tekstveld">OnderWerp:</label>
@@ -95,25 +96,22 @@
             <!-- Selectie -->
             <label for="selectie">Jouw afdeling (optioneel):</label>
             <select id="selectie" name="selectie" required>
-              <option value="optie1">Webdevelopment</option>
-              <option value="optie2">Marketing</option>
-              <option value="optie3">Webdesign</option>
-              <option value="optie4">Administratie</option>
-              <option value="optie5">Management</option>
-              <option value="optie6">HRM</option>
+              <option value="webdevelopment">Webdevelopment</option>
+              <option value="marketing">Marketing</option>
+              <option value="webdesign">Webdesign</option>
+              <option value="administratie">Administratie</option>
+              <option value="management">Management</option>
+              <option value="hrm">HRM</option>
             </select>
         
             <br>
 
-            <!-- Bestandsupload -->
-            <label for="bestand">Bestand uploaden (toegestane formaten: PDF, DOC, DOCX, maximaal 5 MB):</label>
-      <input type="file" id="bestand" name="bestand">
 
       <br><br>
         
             <!-- Verzendknop -->
             <div class="submit_button">
-            <input type="submit" value="Verzenden">
+              <button type="button" onclick="saveIdeaForm()">Opslaan</button>
         </div>
           </form>
         
@@ -172,8 +170,11 @@
     </div>
   </div>
   </footer>
-  
-  <script  src="js/script.js"></script>
+  <script>
+ 
+</script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
 
 </body>
 </html>
