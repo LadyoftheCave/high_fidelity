@@ -871,6 +871,7 @@ header section.hero-section h1.interior {
   flex-direction: column; /* Zorg ervoor dat de items onder elkaar worden weergegeven */
   gap: 10px;
   /* inline-size: 63rem;  */
+  padding: 1rem;
 }
 
 /* Stijl voor de dynamische link */
@@ -901,4 +902,8 @@ header section.hero-section h1.interior {
 
 #resultaten.idee_overzicht div p {
   text-align: left;
+}
+
+.resultaat img {
+  inline-size: 100%;
 }
