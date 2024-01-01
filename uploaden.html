@@ -1,177 +1,146 @@
 <!DOCTYPE html>
-<html lang="nl" >
-<head>
-  <meta charset="UTF-8">
-  <title>Idee&euml;nbus uploaden</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Idee&euml;nbus uploaden</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-</head>
+    <body>
+        <header>
+            <nav class="menu">
+                <a href="index.html" aria-label="ideabox logo"><img src="images/7067281.png" alt="Ideeenbus Logo" class="logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="uploaden.html" class="nav-link">Uploaden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="idee_overzicht.html" class="nav-link">Idee&euml;n</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="over_ideeenbus.html" class="nav-link">Over Idee&euml;nbus</a>
+                    </li>
+                </ul>
+                <button class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
 
+            <!-- Hero-section -->
 
-<body>
-  <header>
-    <nav class="menu">
-      <a href="index.html" aria-label="ideabox logo"><img src="images/7067281.png" alt="Ideeenbus Logo" class="logo"></a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-           <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-           <a href="uploaden.html" class="nav-link">Uploaden</a>
-        </li>
-        <li class="nav-item">
-           <a href="idee_overzicht.html" class="nav-link">Idee&euml;n</a>
-        </li>
-        <li class="nav-item">
-           <a href="over_ideeenbus.html" class="nav-link">Over Idee&euml;nbus</a>
-          </li>
-      </ul>
-      <button class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </nav>
-
-
-    <!-- Hero-section -->
-
-    <!-- Hero-section -->
-    <section class="hero-section uploaden">
-      <h1 class="interior">Uploaden</h1>
-      <!-- <p>Deel je idee met ons en help ons groeien en innoveren</p>
+            <!-- Hero-section -->
+            <section class="hero-section uploaden">
+                <h1 class="interior">Uploaden</h1>
+                <!-- <p>Deel je idee met ons en help ons groeien en innoveren</p>
       <button class="hero-button">Ontdek meer</button> -->
-    </section>
+            </section>
 
-    <picture>
-        <source
-          media="(max-width: 320px)"
-          srcset="images/header_image_medium_sv_upload.jpg">
-        <source
-          media="(min-width: 321px) and (max-width: 1200px)"
-          srcset="images/header_image_medium_sv_upload.jpg">
-        <img
-          src="images/interior_header.jpg"
-          alt="Header Banner"
-          class="header-image">
+            <picture>
+                <source media="(max-width: 320px)" srcset="images/header_image_medium_sv_upload.jpg">
+                <source media="(min-width: 321px) and (max-width: 1200px)" srcset="images/header_image_medium_sv_upload.jpg">
+                <img src="images/interior_header.jpg" alt="Header Banner" class="header-image">
+            </picture>
+        </header>
 
+        <main>
+            <section class="uploaden_section">
+                <div class="white_container container--narrow">
+                    <div class="introtext">
+                        <h2>Idee uploaden</h2>
+                        <p>Jouw idee kan het verschil maken!</p>
+                    </div>
 
-    
+                    <form id="myForm">
+                        <!-- Tekstveld -->
+                        <label for="tekstveld">OnderWerp:</label>
+                        <input type="text" id="tekstveld" name="tekstveld" required>
 
-      </picture>
-  </header>
+                        <br>
 
+                        <!-- Tekstarea -->
+                        <label for="tekstarea">Jouw idee of suggestie:</label>
+                        <textarea id="tekstarea" name="tekstarea" rows="12" cols="50" required></textarea>
 
+                        <br>
 
+                        <!-- Selectie -->
+                        <select id="selectie" name="selectie" required>
+                            <option value="" disabled selected>Selecteer afdeling</option>
+                            <option value="webdevelopment">Webdevelopment</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="webdesign">Webdesign</option>
+                            <option value="administratie">Administratie</option>
+                            <option value="management">Management</option>
+                            <option value="hrm">HRM</option>
+                        </select>
 
+                        <br>
 
-  <main>
-    
+                        <br>
+                        <br>
 
- 
+                        <!-- Verzendknop -->
+                        <div class="submit_button">
+                            <button type="button" onclick="saveIdeaForm()">Opslaan</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="section_footer container--grey">
+            <div class="grey_container container--narrow">
+                <div class="widget widget_one">
+                    <h3>WebKnight B.V. Idee&euml;nbus</h3>
+                    <p>
+                        Deze website is een onderdeel<br>
+                        van WebKnight B.V. en dient<br>
+                        als platform voor het verzamelen<br>
+                        en delen van idee&euml;n.<br>
+                    </p>
 
-    <section class="uploaden_section">
-      <div class="white_container container--narrow "> 
-        <div class="introtext">        <h2>Idee uploaden</h2>
-            <p>Jouw idee kan het verschil maken! </p></div>
+                    <img src="images/social_one.png" class="socials" alt="Facebook logo">
+                    <img src="images/social_two.png" class="socials" alt="Twitter logo">
+                    <img src="images/social_three.png" class="socials" alt="Instagram logo">
+                </div>
+                <div class="widget widget_two">
+                    <h3>Adres</h3>
+                    <p>Ideeplezier</p>
+                    <p>Ideeenbusplein 12</p>
+                    <p>7645ZH Halmelo</p>
+                    <p>www.ideeplezier.nl</p>
+                    <p>053-43256678</p>
+                </div>
 
-            <form id="myForm">
-
-            <!-- Tekstveld -->
-            <label for="tekstveld">OnderWerp:</label>
-            <input type="text" id="tekstveld" name="tekstveld" required>
-        
-            <br>
-        
-            <!-- Tekstarea -->
-            <label for="tekstarea">Jouw idee of suggestie:</label>
-            <textarea id="tekstarea" name="tekstarea" rows="12" cols="50" required></textarea>
-        
-            <br>
-        
-            <!-- Selectie -->
-            <select id="selectie" name="selectie" required>
-              <option value="" disabled selected>Selecteer afdeling</option>
-              <option value="webdevelopment">Webdevelopment</option>
-              <option value="marketing">Marketing</option>
-              <option value="webdesign">Webdesign</option>
-              <option value="administratie">Administratie</option>
-              <option value="management">Management</option>
-              <option value="hrm">HRM</option>
-            </select>
-        
-            <br>
-
-
-      <br><br>
-        
-            <!-- Verzendknop -->
-            <div class="submit_button">
-              <button type="button" onclick="saveIdeaForm()">Opslaan</button>
-        </div>
-          </form>
-        
-</div>
-</section>
-
-  </main>
-  <footer class="section_footer container--grey">
-    <div class="grey_container container--narrow ">
-      <div class="widget widget_one">
-        <h3>WebKnight B.V. Idee&euml;nbus</h3>
-        <p>Deze website is een onderdeel<br>
-          van WebKnight B.V. en dient<br>
-          als platform voor het verzamelen<br>
-          en delen van
-          idee&euml;n.<br></p>
-        <img src="images/social_one.png" class="socials" alt="Facebook logo">
-        <img src="images/social_two.png" class="socials" alt="Twitter logo">
-        <img src="images/social_three.png" class="socials" alt="Instagram logo">
-      </div>
-      <div class="widget widget_two">
-        <h3>Adres</h3>
-          <p>Ideeplezier</p>
-          <p>Ideeenbusplein 12</p>
-          <p>7645ZH Halmelo</p>
-          <p>www.ideeplezier.nl</p>
-          <p>053-43256678</p>
-      </div>
-
-      <div class="widget widget_three">
-        <h3>Sitemap</h3>
-        <ul>
-          <li><a href="index.html" class="footer-link">Home</a></li>
-          <li><a href="uploaden.html" class="footer-link">Uploaden</a></li>
-          <li><a href="idee_overzicht.html" class="footer-link">Idee&euml;n</a></li>
-          <li><a href="over_ideeenbus.html" class="footer-link">Over Idee&euml;nbus</a></li>
- 
-      </ul>
-
-
-
-  
-      </div>
-      <div class="widget widget_fout">
-        <h3>Links</h3>
-        <ul>
-          <li><a href="#" class="footer-link">Ideeplezier</a></li>
-          <li><a href="#" class="footer-link">Ideefun</a></li>
-          <li><a href="#" class="footer-link">Idea box</a></li>
-          <li><a href="#" class="footer-link">Some Idea</a></li>
-          <li><a href="#" class="footer-link">Suggestion box</a></li>
-          <li><a href="#" class="footer-link">De Idee&euml;nbus</a></li>
- 
-      </ul>
-
-    </div>
-  </div>
-  </footer>
-  <script>
- 
-</script>
-  <script src="js/view.js"></script>
-  <script src="js/controller.js"></script>
-
-</body>
+                <div class="widget widget_three">
+                    <h3>Sitemap</h3>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="uploaden.html" class="footer-link">Uploaden</a></li>
+                        <li><a href="idee_overzicht.html" class="footer-link">Idee&euml;n</a></li>
+                        <li><a href="over_ideeenbus.html" class="footer-link">Over Idee&euml;nbus</a></li>
+                    </ul>
+                </div>
+                <div class="widget widget_fout">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#" class="footer-link">Ideeplezier</a></li>
+                        <li><a href="#" class="footer-link">Ideefun</a></li>
+                        <li><a href="#" class="footer-link">Idea box</a></li>
+                        <li><a href="#" class="footer-link">Some Idea</a></li>
+                        <li><a href="#" class="footer-link">Suggestion box</a></li>
+                        <li><a href="#" class="footer-link">De Idee&euml;nbus</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script></script>
+        <script src="js/view.js"></script>
+        <script src="js/controller.js"></script>
+    </body>
 </html>
