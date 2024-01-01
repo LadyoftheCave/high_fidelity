@@ -907,3 +907,7 @@ header section.hero-section h1.interior {
 .resultaat img {
   inline-size: 100%;
 }
+
+main .grey_container .read img {
+  inline-size: 100%;
+}
